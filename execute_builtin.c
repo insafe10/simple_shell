@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * execute_handle - handles the execution
+ * execute_builtin - builtin the execution
+ * Struct builtin  - builtin the struct
  * @cmds: cmmnds
  * @input_line: input read from stdin
  *
@@ -10,7 +11,8 @@
 
 int execute_builtin(char **cmds, char *input_line)
 {
-	struct builtin {
+	struct builtin
+	{
 		char *env;
 		char *exit;
 	} builtin = {"env", "exit"};

@@ -10,7 +10,7 @@
 char *create_path(char *path, char *cmd)
 {
 	char *buffer;
-	size_t i =0;
+	size_t i = 0;
 	size_t j = 0;
 
 	if (!cmd)
@@ -24,7 +24,7 @@ char *create_path(char *path, char *cmd)
 
 	buffer = malloc(sizeof(char) * (path_len + cmd_len + 2));
 	if (!buffer)
-		return(NULL);
+		return (NULL);
 
 	while (path[i])
 	{
