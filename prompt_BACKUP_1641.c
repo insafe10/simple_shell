@@ -18,3 +18,10 @@ void Disp_prompt(void)
 		write(STDERR_FILENO, prompt, sizeof(prompt) - 1);
 	}
 }
+<<<<<<< HEAD
+=======
+int main(void)
+{
+	Disp_prompt();
+}
+>>>>>>> 9a89ebfe85d1f6f1de1339fb13f0624266681d18

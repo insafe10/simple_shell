@@ -3,7 +3,7 @@
 /**
  * Disp_prompt - Prints $ to mention that shell is ready
  * The functions checks if the shell is in interactive mode
- * and writes the prompt to STDERR if it is
+ * and writes the prompt to STDERR if it is 
  */
 
 void Disp_prompt(void)
@@ -14,7 +14,7 @@ void Disp_prompt(void)
 	if (flags.interactive)
 	{
 		char prompt[] = "$ ";
-
+		
 		write(STDERR_FILENO, prompt, sizeof(prompt) - 1);
 	}
 }

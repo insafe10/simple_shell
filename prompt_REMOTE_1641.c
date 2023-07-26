@@ -18,3 +18,7 @@ void Disp_prompt(void)
 		write(STDERR_FILENO, prompt, sizeof(prompt) - 1);
 	}
 }
+int main(void)
+{
+	Disp_prompt();
+}
