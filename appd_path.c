@@ -12,6 +12,7 @@ char *create_path(char *path, char *cmd)
 	char *buffer;
 	size_t i =0;
 	size_t j = 0;
+	size_t cmd_len, path_len;
 
 	if (!cmd)
 		cmd = "";
@@ -19,8 +20,8 @@ char *create_path(char *path, char *cmd)
 	if (!path)
 		path = "";
 
-	size_t cmd_len = _strlen(cmd);
-	size_t path_len = _strlen(path);
+	cmd_len = _strlen(cmd);
+	path_len = _strlen(path);
 
 	buffer = malloc(sizeof(char) * (path_len + cmd_len + 2));
 	if (!buffer)

@@ -15,14 +15,14 @@ int execute_builtin(char **cmds, char *input_line)
 		char *exit;
 	} builtin = {"env", "exit"};
 
-	if (_strcmp(*cmds, builtin.exit) == 0)
+	if (_strcmp(*cmds, builtin.env) == 0)
 	{
 		print_environment();
 		return (1);
 	}
 	else if (_strcmp(*cmds, builtin.exit) == 0)
 	{
-		exit(cmds, input_line);
+		exit_handler(cmds, input_line);
 		return (1);
 	}
 	return (0);

@@ -33,7 +33,7 @@ int main(int argc, char **argv, char *envp[])
 		if (line_size < 0)
 			break;
 
-		info.line_count++;
+		info.ln_count++;
 
 		if (input_line[line_size - 1] == '\n')
 			input_line[line_size - 1] = '\0';
@@ -57,7 +57,7 @@ int main(int argc, char **argv, char *envp[])
 			execute(path_command, user_command);
 	}
 
-	if (line_size < 0 && is_interactive())
+	if (line_size < 0 && flags.interactive)
 		write(STDERR_FILENO, "\n", 1);
 
 	free(input_line);

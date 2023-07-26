@@ -8,7 +8,7 @@
  * Return: return path of the exutable, NULL otherwise
  */
 
-char *search_executable(char **search_paths, char *cmd);
+char *search_executable(char **search_paths, char *cmd)
 {
 	char *result;
 	int i = 0;

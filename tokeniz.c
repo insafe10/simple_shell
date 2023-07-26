@@ -30,7 +30,7 @@ char **split_string(char *input_line)
     }
 
     tokens = malloc(sizeof(char *) * (token_size + 1));
-    token = _strtok(input_line, delimiters);
+    token = strtok(input_line, delimiters);
     while (token)
     {
         tokens[index] = _strdup(token);
@@ -40,7 +40,7 @@ char **split_string(char *input_line)
             free(temp_line);
             return (NULL);
         }
-        token = _strtok(NULL, delimiters);
+        token = strtok(NULL, delimiters);
         index++;
     }
 
