@@ -62,21 +62,20 @@ char **split_string(char *input_line)
 		temp_line++;
 	}
 	tokens = malloc(sizeof(char *) * (token_size + 1));
-	token = _strtok(input_line, delimiters);
+	token = strtok(input_line, delimiters);
 	while (token)
 	{
 		tokens[index] = _strdup(token);
 		if (tokens[index] == NULL)
 		{
 			free(tokens);
-			free(temp_line;
+			free(temp_line);
 			return (NULL);
-			}
-			token = _strtok(NULL, delimiters);
+		}
+			token = strtok(NULL, delimiters);
 			index++;
-			}
+	}
 			tokens[index] = NULL;
 			free(temp_line);
 			return (tokens);
->>>>>>> 9a89ebfe85d1f6f1de1339fb13f0624266681d18
 }

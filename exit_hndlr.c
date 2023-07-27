@@ -10,6 +10,6 @@
 void exit_handler(char **cmd, char *input_line)
 {
 	free(input_line);
-	free_buffers(cmd)
+	free_buffers(cmd);
 	exit(0);
 }

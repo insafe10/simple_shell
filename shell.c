@@ -47,7 +47,6 @@ int main(int argc, char **argv, char *envp[])
 	}
 
 	if (line_size < 0 && flags.interactive)
-	if (line_size < 0 && is_interactive())
 		write(STDERR_FILENO, "\n", 1);
 	free(input_line);
 	return (0);
