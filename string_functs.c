@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * custom_strcmp - compares two strings
+ * _strcmp - compares two strings
  * @str1: first string to be compared
  * @str2: second string to be compared
  *
@@ -20,7 +20,7 @@ int _strcmp(char *str1, char *str2)
 }
 
 /**
- * custom_strlen - returns the length of a string
+ * _strlen - returns the length of a string
  * @str: string passed
  *
  * Return: Returns the length of the string passed
@@ -38,7 +38,7 @@ int _strlen(char *str)
 }
 
 /**
- * custom_strncmp - compares two strings up to n bytes
+ * _strncmp - compares two strings up to n bytes
  * @str1: first string to be compared
  * @str2: second string to be compared
  * @n: number of bytes
@@ -58,7 +58,7 @@ int _strncmp(char *str1, char *str2, int n)
 }
 
 /**
- * custom_strdup - duplicates a string
+ * _strdup - duplicates a string
  * @str: string to be duplicated
  *
  * Return: Returns a pointer to the duplicated string
@@ -84,7 +84,7 @@ char *_strdup(char *str)
 }
 
 /**
- * custom_strchr - locates a character in a string
+ * _strchr - locates a character in a string
  * @str: string to be checked
  * @ch: character to be located
  *
